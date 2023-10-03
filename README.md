@@ -7,8 +7,7 @@ Yichun Shi, Peng Wang, Jianglong Ye, Long Mai, Kejie Li, Xiao Yang
 - **This repo includes the diffusion model and 2D image generation code of [MVDream](https://mv-dream.github.io/index.html) paper.**
 - **For 3D Generation, please check [MVDream-threestudio](https://github.com/bytedance/MVDream-threestudio).**
 
-![multiview diffusion](https://github.com/bytedance/MVDream/assets/21265012/215847a7-27c0-422c-814f-c1bc9a3c348f)
-
+![multiview diffusion](https://github.com/bytedance/MVDream/assets/21265012/849cb798-1d97-42fd-9f02-c23b0dc507d5)
 
 ## Installation
 You can use the same environment as in [Stable-Diffusion](https://github.com/Stability-AI/stablediffusion) for this repo. Or you can set up the environment by installing the given requirements
