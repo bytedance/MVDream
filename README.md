@@ -10,21 +10,27 @@ Yichun Shi, Peng Wang, Jianglong Ye, Long Mai, Kejie Li, Xiao Yang
 ![multiview diffusion](https://github.com/bytedance/MVDream/assets/21265012/215847a7-27c0-422c-814f-c1bc9a3c348f)
 
 
-## Requirements
+## Installation
 You can use the same environment as in [Stable-Diffusion](https://github.com/Stability-AI/stablediffusion) for this repo. Or you can set up the environment by installing the given requirements
-
-``` python
+``` bash
 pip3 install -r requirements.txt
 ```
 
+To use MVDream as a python module, you can install it by:
+``` python
+pip3 install -e .
+```
+
 ## Model Download
-Currently we provide two checkpoints, one fine-tuned from SD 1.5 and one from SD 2.1 base (512x512) model. 
+Our models are provided on the [Huggingface Model Page](https://huggingface.co/MVDream/MVDream/) with the OpenRAIL license.
 | Model      | Base Model | Resolution |
 | ----------- | ----------- | ----------- |
 | sd-v2.1-base-4view   | [Stable Diffusion 2.1 Base](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) | 4x256x256 |
 | sd-v1.5-4view        | [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)             | 4x256x256 |
 
-By default, we use the SD-2.1-base model in our experiments.
+By default, we use the SD-2.1-base model in our experiments. 
+
+Note that you don't have to manually download the checkpoints for the following scripts.
 
 
 ## Text-to-Image
