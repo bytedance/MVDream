@@ -3,11 +3,13 @@ Yichun Shi, Peng Wang, Jianglong Ye, Long Mai, Kejie Li, Xiao Yang
 
 | [Project Page](https://mv-dream.github.io/) | [3D Generation](https://github.com/bytedance/MVDream-threestudio) | [Paper](https://arxiv.org/abs/2308.16512) | [HuggingFace Demo (Coming)]() |
 
+![multiview diffusion](https://github.com/bytedance/MVDream/assets/21265012/849cb798-1d97-42fd-9f02-c23b0dc507d5)
 
-- **This repo includes the diffusion model and 2D image generation code of [MVDream](https://mv-dream.github.io/index.html) paper.**
+## 3D Generation
+
+- **This repository only includes the diffusion model and 2D image generation code of [MVDream](https://mv-dream.github.io/index.html) paper.**
 - **For 3D Generation, please check [MVDream-threestudio](https://github.com/bytedance/MVDream-threestudio).**
 
-![multiview diffusion](https://github.com/bytedance/MVDream/assets/21265012/849cb798-1d97-42fd-9f02-c23b0dc507d5)
 
 ## Installation
 You can use the same environment as in [Stable-Diffusion](https://github.com/Stability-AI/stablediffusion) for this repo. Or you can set up the environment by installing the given requirements
