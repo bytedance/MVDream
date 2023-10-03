@@ -14,5 +14,7 @@ setup(
         'omegaconf',
         'einops',
         'huggingface_hub',
+        "transformers",
+        "open-clip-torch",
     ],
 )
