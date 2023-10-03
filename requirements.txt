@@ -1,0 +1,9 @@
+opencv-python
+imageio
+imageio-ffmpe
+omegaconf
+einops
+transformers==4.27.1
+open-clip-torch==2.7.0
+gradio>=3.13.2
+xformers==0.0.16
