@@ -1,6 +1,6 @@
 opencv-python
 imageio
-imageio-ffmpe
+imageio-ffmpeg
 omegaconf
 einops
 transformers==4.27.1
