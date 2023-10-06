@@ -14,12 +14,12 @@ Yichun Shi, Peng Wang, Jianglong Ye, Long Mai, Kejie Li, Xiao Yang
 ## Installation
 You can use the same environment as in [Stable-Diffusion](https://github.com/Stability-AI/stablediffusion) for this repo. Or you can set up the environment by installing the given requirements
 ``` bash
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-To use MVDream as a python module, you can install it by:
+To use MVDream as a python module, you can install it by `pip install -e .` or:
 ``` python
-pip3 install -e .
+pip install git+https://github.com/bytedance/MVDream
 ```
 
 ## Model Download
@@ -39,12 +39,12 @@ Note that you don't have to manually download the checkpoints for the following 
 You can simply generate multi-view images by running the following command:
 
 ``` bash
-python3 scripts/t2i.py --text "an astronaut riding a horse"
+python scripts/t2i.py --text "an astronaut riding a horse"
 ```
 We also provide a gradio script to try out with GUI:
 
 ``` bash
-python3 scripts/gradio_app.py
+python scripts/gradio_app.py
 ```
 
 ## Usage
@@ -73,10 +73,10 @@ model.eval()
 model.cuda()
 with torch.no_grad():
     noise = torch.randn(4,4,32,32, device="cuda") # batch of 4x for 4 views, latent size 32=256/8
-    t = torch.tensor([999]*4, dtype=torch.long, device="cuda")
+    t = torch.tensor([999]*4, dtype=torch.long, device="cuda") # same timestep for 4 views
     cond = {
         "context": model.get_learned_conditioning([""]*4).cuda(), # text embeddings
-        "camera": get_camera(4).cuda(), 
+        "camera": get_camera(4).cuda(),
         "num_frames": 4,
     }
     eps = model.apply_model(noise, t, cond=cond)
