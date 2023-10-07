@@ -22,7 +22,7 @@ To use MVDream as a python module, you can install it by `pip install -e .` or:
 pip install git+https://github.com/bytedance/MVDream
 ```
 
-## Model Download
+## Model Card
 Our models are provided on the [Huggingface Model Page](https://huggingface.co/MVDream/MVDream/) with the OpenRAIL license.
 | Model      | Base Model | Resolution |
 | ----------- | ----------- | ----------- |
